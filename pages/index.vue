@@ -1,12 +1,12 @@
 
 <template>
   <section>
-    <div class="container-fluid pl-0 pr-0"><img class="w-full" src="~/assets/img/hero.png"></div>
+    <div class="container-fluid pl-0 pr-0"><img class="w-full" src="~/assets/img/hero.jpg"></div>
   </section>
   
-  <section class="text-end px-2">
+  <section class="text-end px-2 font-dinar">
     <div class="container">
-      <div class="flex flex-row-reverse items-end pt-0 mt-3">
+      <div class="flex flex-row-reverse items-end pt-0 mt-3 font-sans">
         <div class=" flex justify-end p-2">
           <span class="flex justify-end"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"
               class=" icon-clr w-5 h-5">
@@ -49,7 +49,7 @@
         <span class="flex text-center text-gray-500 p-2 text-xs me-1"><span class="vertical-align: inherit;"><span
               class="text-xs vertical-align: inherit;">48,120</span></span></span>
       </div>
-      <h2 class="text-3xl red-700 px-2  mb-3"><span class="vertical-align: inherit;"><span
+      <h2 class="text-3xl red-700 px-2 font-bold  mb-3"><span class="vertical-align: inherit;"><span
             class="vertical-align: inherit;">زيت زيتون صفوة الجوف</span></span></h2>
       <h3 class="text-base px-2 mb-4"><span class="vertical-align: inherit;"><span class="vertical-align: inherit;">بكر
             ممتاز عصرة اولى</span></span></h3>
@@ -64,12 +64,12 @@
   
   <section class="mt-4  text-end">
     <div class="container mx-auto  ">
-      <h3 class="text-base px-3 font-bold  mb-4">العرض</h3>
+      <h3 class="text-lg px-3 font-bold  mb-4 font-dinar">العرض</h3>
   
       <div class=" mb-6 truncate ">
         <carousel :settings="settings" :breakpoints="breakpoints">
           <Slide v-for="product in products" :key="product.id" class="prbt">
-            <div class="cprbt">
+            <div class="cprbt font-dinar" @click="addToCart(product)">
               <div class=" prdtgg">
                 <div class="mt-2">
                   <div class=" prdimg1 w-20 "><img class="w-full" :src="product.image"><span
@@ -80,15 +80,18 @@
                       class=" absolute prdtbg "><span><span>{{product.namEe}}</span></span><br></span></div>
                 </div>
                 <div class="mt-28 text-right">
-                  <h3 class="text-base px-1 mr-2">{{ product.name }}</h3>
-                  <h4 class="text-xs px-1 mr-2">{{ product.description }}</h4>
-                  <p class="text-gray-500 px-1 font-normal mr-1 mt-2 text-base line-through">{{product.DiscountPrice}}
+                  <h3 class="text-base px-1 mr-2 font-bold font-sans">{{ product.name }}</h3>
+                  <h4 class="text-xs px-1 mr-2 font-sans">{{ product.description }}</h4>
+                  <p class="text-gray-500 px-1 font-normal mr-1 mt-2 text-base line-through font-sans">{{product.DiscountPrice}}
                   </p>
-                  <p class="text-base px-1 font-medium mr-1  text-red-700 cursor-auto ">ر.س {{ product.price }}</p>
+                 <div class="flex jutify-between items-center">
+                  <p class="text-base px-1 font-medium mr-1  text-red-700 cursor-auto ">ر.س <span class="font-sans">{{ product.price }}</span></p>
+                   <span v-if="product.economical == 1" class="text-[8px] bg-[#e66862] py-1 px-2 text-white rounded-xl">الاكثر توفيراً</span>
+                 </div>
                 </div>
                   <div class="crtbtnn flex">
                   
-                    <button v-if="adtProduct.id != product.id" @click="addToCart(product)">
+                    <button v-if="adtProduct.id != product.id">
                       <div class="flex-1 ml-3 mt-5"><span class="befrcrt"><span class="dtbtn">.</span></span></div>
                   
                     </button>
@@ -128,7 +131,7 @@
   
     </div>
   </section>
-  <PurchaseForm :product="adtProduct" :totalPrice="totalPrice" />
+  <PurchaseForm :product="adtProduct" />
   
   <review />
 </template>
@@ -138,7 +141,7 @@
 
 import axios from 'axios';
 import 'vue3-carousel/dist/carousel.css'
-import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
+import { Carousel, Slide, Navigation } from 'vue3-carousel'
 export default {
 
   components: {
@@ -152,7 +155,6 @@ export default {
             names: [],
             adtProduct: {},
             selectedProduct: [],
-            totalPrice: { 'totalPrice': 0 },
             quantity: 1,
 
 
@@ -175,13 +177,15 @@ export default {
               700: {
                 itemsToShow: 5,
                 snapAlign: 'start',
-                dir: 'rtl'
+                dir: 'rtl',
+                transition:500,
               },
 
               1024: {
                 itemsToShow:8,
                 snapAlign: 'start',
-                dir: 'rtl'
+                dir: 'rtl',
+                transition:500,
               },
             }
           }
@@ -202,15 +206,15 @@ export default {
     methods: {
         addToCart(product) {
           this.adtProduct = { ...product, quantity: this.quantity };
-          console.log(this.adtProduct)
-          this.totalPrice.totalPrice = Number(this.adtProduct.price * this.adtProduct.quantity)  
         },
         qntyIncrementAndDecrement(type) {
 
             if (type == 'increment') {
-                this.quantity++
+                this.quantity++;
+                this.adtProduct.quantity = this.adtProduct.quantity + 1;
             } else if (type == 'decrement' && this.quantity > 1) {
-                this.quantity--
+                this.quantity--;
+                this.adtProduct.quantity = this.adtProduct.quantity - 1;
             }
         },
 

@@ -1,1 +1,1 @@
-export { default } from "file:///C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"
+export { default } from "file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/@nuxt/vite-builder/dist/runtime/client.manifest.mjs"

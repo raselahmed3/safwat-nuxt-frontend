@@ -3,11 +3,11 @@
 <div class="text-end  container">
     <div style="border-bottom: 1px solid #F2F2F2;margin-top: 25px;margin-bottom: 15px;"></div>
 
-    <h3 class="text-base font-bold px-1 pb-2"><span><span>حفظ هذا العرض لوقت لاحق
+    <h3 class="text-lg font-bold px-1 pb-2 font-dinar"><span><span>حفظ هذا العرض لوقت لاحق
             </span></span></h3>
 
     <div v-if="!message">
-        <button v-show="!isShow" class="flex justify-center  bg-gray-200 dc-btn-2 " @click="isShow = !isShow"> <img class="wtsapimg mx-1 h-5"
+        <button v-show="!isShow" class="flex justify-center  bg-gray-200 dc-btn-2 font-dinar" @click="isShow = !isShow"> <img class="wtsapimg mx-1 h-5"
                 src="~/assets/img/009-whatsapp.png" alt="">ارسله لي عبر الوتس اب</button>
         <div v-show="isShow">
             <form class="container" @submit.prevent="whatsappSubmit">
@@ -15,13 +15,9 @@
                 <div class=" flex justify-between">
         
                     <div class="relative w-full selt-frmmm ">
-                        <input :class="!!error && 'error_border'" class="py-4 w-full rounded" v-model="phone" type="number" placeholder="x xxx xxx"
+                        <input maxlength="8" pattern="\d*" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" :class="!!error && 'error_border'" class="py-4 w-full rounded" v-model="phone" type="number" placeholder="5xx xxx xxx"
                             style="background: #f2f2f2;border-style: none;padding-left: 83px;direction: ltr;">
-                        <div class="flex items-center absolute"
-                            style="top: 54%;transform: translateY(-50%);left: 20px;  #f2f2f2;border-style: none;">
-                            <span></span><img src="https://cdn.countryflags.com/thumbs/saudi-arabia/flag-400.png"
-                                class="w-5">&nbsp;&nbsp;05
-                        </div>
+                            <div class="flex items-center gap-x-1 absolute top-1/2 left-3 transform -translate-y-1/2"><span>+966</span><img src="https://cdn.countryflags.com/thumbs/saudi-arabia/flag-400.png" class="w-5 -mt-[0.5px]"/></div>
                     </div>
         
         

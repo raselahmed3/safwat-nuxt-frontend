@@ -1,9 +1,9 @@
 {
-  "_hash": "BTqXdxVjyz",
+  "_hash": "Tas8s4k2dH",
   "project": {
-    "rootDir": "C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend"
+    "rootDir": "/home/rasel/Public/safwat-nuxt-frontend"
   },
   "versions": {
-    "nuxt": "3.1.1"
+    "nuxt": "3.2.0"
   }
 }

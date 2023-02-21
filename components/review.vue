@@ -1,5 +1,5 @@
 <template>
-    <section class="text-end pt-4 px-2 pb-6">
+    <section class="text-end pt-4 px-2 pb-6 font-dinar">
         <div class="container" >
             <h1 style="text-align: center;font-size: 30px;"><span style="font-weight: bold;font-family: sans-serif;"><span ><span >+200,000</span></span></span><span ><span > &nbsp;عميل </span></span><br><span ><span >يثقون بصفوة الجوف
             </span></span></h1>
@@ -24,7 +24,7 @@
                                     
                 </div>
                         
-                        <span class="flex  p-2 text-xs "><span class="vertical-align: inherit;"><span class="vertical-align: inherit;">4.8 out of 5</span></span></span>
+                        <span class="flex  p-2 text-xs font-sens"><span class="vertical-align: inherit;"><span class="vertical-align: inherit;">4.8 out of 5</span></span></span>
             </div>
 
 
@@ -420,8 +420,7 @@
                 </div>
             </div>
             <div class="btmlnkbtn ">
-               <button class="border-solid  btmlnkb border-black rounded-lg dc-btn-2" href="https://safwat-aljawf.com" > للمزيد زر&nbsp;Safwat-aljawf.com</button> 
-            
+               <a class="border-solid  btmlnkb border-black rounded-lg dc-btn-2 block" href="https://safwat-aljawf.com" > للمزيد زر&nbsp;Safwat-aljawf.com</a> 
             </div>            
             
         </div>

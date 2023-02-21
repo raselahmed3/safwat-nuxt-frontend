@@ -1,25 +1,25 @@
-globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/node-fetch-native/dist/polyfill.mjs';
+globalThis._importMeta_={url:import.meta.url,env:process.env};import 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/node-fetch-native/dist/polyfill.mjs';
 import { Server } from 'node:http';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { mkdirSync } from 'node:fs';
 import { parentPort, threadId } from 'node:worker_threads';
-import { provider, isWindows } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/std-env/dist/index.mjs';
-import { eventHandler, setHeaders, sendRedirect, defineEventHandler, handleCacheHeaders, createEvent, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, lazyEventHandler, toNodeListener, getQuery, createError } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/h3/dist/index.mjs';
-import { createRenderer } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/vue-bundle-renderer/dist/runtime.mjs';
-import devalue from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/@nuxt/devalue/dist/devalue.mjs';
-import { renderToString } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/vue/server-renderer/index.mjs';
-import { withoutBase, parseURL, withQuery, joinURL } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/ufo/dist/index.mjs';
-import destr from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/destr/dist/index.mjs';
-import { snakeCase } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/scule/dist/index.mjs';
-import { createFetch as createFetch$1, Headers } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/ofetch/dist/node.mjs';
-import { createCall, createFetch } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/unenv/runtime/fetch/index.mjs';
-import { createHooks } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/hookable/dist/index.mjs';
-import { hash } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/ohash/dist/index.mjs';
-import { createStorage } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/unstorage/dist/index.mjs';
-import unstorage_47drivers_47fs from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/unstorage/dist/drivers/fs.mjs';
-import defu from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/nitropack/node_modules/defu/dist/defu.mjs';
-import { toRouteMatcher, createRouter } from 'file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/node_modules/radix3/dist/index.mjs';
+import { provider, isWindows } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/std-env/dist/index.mjs';
+import { defineEventHandler, handleCacheHeaders, createEvent, eventHandler, setHeaders, sendRedirect, proxyRequest, getRequestHeader, getRequestHeaders, setResponseHeader, createApp, createRouter as createRouter$1, toNodeListener, fetchWithEvent, lazyEventHandler, getQuery, createError } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/h3/dist/index.mjs';
+import { createRenderer } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/vue-bundle-renderer/dist/runtime.mjs';
+import devalue from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/@nuxt/devalue/dist/devalue.mjs';
+import { renderToString } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/vue/server-renderer/index.mjs';
+import { parseURL, withoutBase, joinURL, withQuery } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/ufo/dist/index.mjs';
+import destr from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/destr/dist/index.mjs';
+import { snakeCase } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/scule/dist/index.mjs';
+import { createFetch as createFetch$1, Headers } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/ofetch/dist/node.mjs';
+import { createCall, createFetch } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/unenv/runtime/fetch/index.mjs';
+import { createHooks } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/hookable/dist/index.mjs';
+import { hash } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/ohash/dist/index.mjs';
+import { createStorage } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/unstorage/dist/index.mjs';
+import unstorage_47drivers_47fs from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/unstorage/drivers/fs.mjs';
+import defu from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/defu/dist/defu.mjs';
+import { toRouteMatcher, createRouter } from 'file:///home/rasel/Public/safwat-nuxt-frontend/node_modules/radix3/dist/index.mjs';
 
 const _runtimeConfig = {"app":{"baseURL":"/","buildAssetsDir":"/_nuxt/","cdnURL":""},"nitro":{"envPrefix":"NUXT_","routeRules":{"/__nuxt_error":{"cache":false}}},"public":{}};
 const ENV_PREFIX = "NITRO_";
@@ -61,7 +61,7 @@ function deepFreeze(object) {
   return Object.freeze(object);
 }
 
-const serverAssets = [{"baseName":"server","dir":"assets"}];
+const serverAssets = [{"baseName":"server","dir":"/home/rasel/Public/safwat-nuxt-frontend/server/assets"}];
 
 const assets = createStorage();
 
@@ -75,79 +75,10 @@ const useStorage = () => storage;
 
 storage.mount('/assets', assets);
 
-storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\ronyb\\Downloads\\-safwat-nuxt-frontend-main-nuxt\\safwat-nuxt-frontend","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\ronyb\\Downloads\\-safwat-nuxt-frontend-main-nuxt\\safwat-nuxt-frontend\\server","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\ronyb\\Downloads\\-safwat-nuxt-frontend-main-nuxt\\safwat-nuxt-frontend\\.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
-storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","base":"C:\\Users\\ronyb\\Downloads\\-safwat-nuxt-frontend-main-nuxt\\safwat-nuxt-frontend\\.nuxt\\cache","ignore":["**/node_modules/**","**/.git/**"]}));
-
-function defineRenderHandler(handler) {
-  return eventHandler(async (event) => {
-    if (event.node.req.url.endsWith("/favicon.ico")) {
-      event.node.res.setHeader("Content-Type", "image/x-icon");
-      event.node.res.end(
-        "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-      );
-      return;
-    }
-    const response = await handler(event);
-    if (!response) {
-      if (!event.node.res.writableEnded) {
-        event.node.res.statusCode = event.node.res.statusCode === 200 ? 500 : event.node.res.statusCode;
-        event.node.res.end(
-          "No response returned from render handler: " + event.node.req.url
-        );
-      }
-      return;
-    }
-    const nitroApp = useNitroApp();
-    await nitroApp.hooks.callHook("render:response", response, { event });
-    if (!event.node.res.headersSent && response.headers) {
-      for (const header in response.headers) {
-        event.node.res.setHeader(header, response.headers[header]);
-      }
-      if (response.statusCode) {
-        event.node.res.statusCode = response.statusCode;
-      }
-      if (response.statusMessage) {
-        event.node.res.statusMessage = response.statusMessage;
-      }
-    }
-    return typeof response.body === "string" ? response.body : JSON.stringify(response.body);
-  });
-}
-
-const config = useRuntimeConfig();
-const _routeRulesMatcher = toRouteMatcher(
-  createRouter({ routes: config.nitro.routeRules })
-);
-function createRouteRulesHandler() {
-  return eventHandler((event) => {
-    const routeRules = getRouteRules(event);
-    if (routeRules.headers) {
-      setHeaders(event, routeRules.headers);
-    }
-    if (routeRules.redirect) {
-      return sendRedirect(
-        event,
-        routeRules.redirect.to,
-        routeRules.redirect.statusCode
-      );
-    }
-  });
-}
-function getRouteRules(event) {
-  event.context._nitro = event.context._nitro || {};
-  if (!event.context._nitro.routeRules) {
-    const path = new URL(event.node.req.url, "http://localhost").pathname;
-    event.context._nitro.routeRules = getRouteRulesForPath(
-      withoutBase(path, useRuntimeConfig().app.baseURL)
-    );
-  }
-  return event.context._nitro.routeRules;
-}
-function getRouteRulesForPath(path) {
-  return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
-}
+storage.mount('root', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/rasel/Public/safwat-nuxt-frontend","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('src', unstorage_47drivers_47fs({"driver":"fs","readOnly":true,"base":"/home/rasel/Public/safwat-nuxt-frontend/server","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('build', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/rasel/Public/safwat-nuxt-frontend/.nuxt","ignore":["**/node_modules/**","**/.git/**"]}));
+storage.mount('cache', unstorage_47drivers_47fs({"driver":"fs","readOnly":false,"base":"/home/rasel/Public/safwat-nuxt-frontend/.nuxt/cache","ignore":["**/node_modules/**","**/.git/**"]}));
 
 const defaultCacheOptions = {
   name: "_",
@@ -313,7 +244,7 @@ function defineCachedEventHandler(handler, opts = defaultCacheOptions) {
       const body = await handler(event) || _resSendBody;
       const headers = event.node.res.getHeaders();
       headers.etag = headers.Etag || headers.etag || `W/"${hash(body)}"`;
-      headers["last-modified"] = headers["Last-Modified"] || headers["last-modified"] || new Date().toUTCString();
+      headers["last-modified"] = headers["Last-Modified"] || headers["last-modified"] || (/* @__PURE__ */ new Date()).toUTCString();
       const cacheControl = [];
       if (opts.swr) {
         if (opts.maxAge) {
@@ -383,9 +314,93 @@ function cloneWithProxy(obj, overrides) {
 }
 const cachedEventHandler = defineCachedEventHandler;
 
+const config = useRuntimeConfig();
+const _routeRulesMatcher = toRouteMatcher(
+  createRouter({ routes: config.nitro.routeRules })
+);
+function createRouteRulesHandler() {
+  return eventHandler((event) => {
+    const routeRules = getRouteRules(event);
+    if (routeRules.headers) {
+      setHeaders(event, routeRules.headers);
+    }
+    if (routeRules.redirect) {
+      return sendRedirect(
+        event,
+        routeRules.redirect.to,
+        routeRules.redirect.statusCode
+      );
+    }
+    if (routeRules.proxy) {
+      let target = routeRules.proxy.to;
+      if (target.endsWith("/**")) {
+        let targetPath = event.path;
+        const strpBase = routeRules.proxy._proxyStripBase;
+        if (strpBase) {
+          targetPath = withoutBase(targetPath, strpBase);
+        }
+        target = joinURL(target.slice(0, -3), targetPath);
+      }
+      return proxyRequest(event, target, {
+        fetch: $fetch.raw,
+        ...routeRules.proxy
+      });
+    }
+  });
+}
+function getRouteRules(event) {
+  event.context._nitro = event.context._nitro || {};
+  if (!event.context._nitro.routeRules) {
+    const path = new URL(event.node.req.url, "http://localhost").pathname;
+    event.context._nitro.routeRules = getRouteRulesForPath(
+      withoutBase(path, useRuntimeConfig().app.baseURL)
+    );
+  }
+  return event.context._nitro.routeRules;
+}
+function getRouteRulesForPath(path) {
+  return defu({}, ..._routeRulesMatcher.matchAll(path).reverse());
+}
+
 const plugins = [
   
 ];
+
+function defineRenderHandler(handler) {
+  return eventHandler(async (event) => {
+    if (event.node.req.url.endsWith("/favicon.ico")) {
+      event.node.res.setHeader("Content-Type", "image/x-icon");
+      event.node.res.end(
+        "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+      );
+      return;
+    }
+    const response = await handler(event);
+    if (!response) {
+      if (!event.node.res.writableEnded) {
+        event.node.res.statusCode = event.node.res.statusCode === 200 ? 500 : event.node.res.statusCode;
+        event.node.res.end(
+          "No response returned from render handler: " + event.node.req.url
+        );
+      }
+      return;
+    }
+    const nitroApp = useNitroApp();
+    await nitroApp.hooks.callHook("render:response", response, { event });
+    if (!event.node.res.headersSent && response.headers) {
+      for (const header in response.headers) {
+        event.node.res.setHeader(header, response.headers[header]);
+      }
+      if (response.statusCode) {
+        event.node.res.statusCode = response.statusCode;
+      }
+      if (response.statusMessage) {
+        event.node.res.statusMessage = response.statusMessage;
+      }
+    }
+    return typeof response.body === "string" ? response.body : JSON.stringify(response.body);
+  });
+}
 
 function hasReqHeader(event, name, includes) {
   const value = getRequestHeader(event, name);
@@ -395,7 +410,7 @@ function isJsonRequest(event) {
   return hasReqHeader(event, "accept", "application/json") || hasReqHeader(event, "user-agent", "curl/") || hasReqHeader(event, "user-agent", "httpie/") || event.node.req.url?.endsWith(".json") || event.node.req.url?.includes("/api/");
 }
 function normalizeError(error) {
-  const cwd = process.cwd();
+  const cwd = typeof process.cwd === "function" ? process.cwd() : "/";
   const stack = (error.stack || "").split("\n").splice(1).filter((line) => line.includes("at ")).map((line) => {
     const text = line.replace(cwd + "/", "./").replace("webpack:/", "").replace("file://", "").trim();
     return {
@@ -469,11 +484,11 @@ const errorHandler = (async function errorhandler(error, event) {
   event.node.res.end(await res.text());
 });
 
-const _lazy_muwxOF = () => Promise.resolve().then(function () { return renderer$1; });
+const _lazy_tSLNcQ = () => Promise.resolve().then(function () { return renderer$1; });
 
 const handlers = [
-  { route: '/__nuxt_error', handler: _lazy_muwxOF, lazy: true, middleware: false, method: undefined },
-  { route: '/**', handler: _lazy_muwxOF, lazy: true, middleware: false, method: undefined }
+  { route: '/__nuxt_error', handler: _lazy_tSLNcQ, lazy: true, middleware: false, method: undefined },
+  { route: '/**', handler: _lazy_tSLNcQ, lazy: true, middleware: false, method: undefined }
 ];
 
 function createNitroApp() {
@@ -485,6 +500,24 @@ function createNitroApp() {
   });
   const router = createRouter$1();
   h3App.use(createRouteRulesHandler());
+  const localCall = createCall(toNodeListener(h3App));
+  const localFetch = createFetch(localCall, globalThis.fetch);
+  const $fetch = createFetch$1({
+    fetch: localFetch,
+    Headers,
+    defaults: { baseURL: config.app.baseURL }
+  });
+  globalThis.$fetch = $fetch;
+  h3App.use(
+    eventHandler((event) => {
+      const envContext = event.node.req.__unenv__;
+      if (envContext) {
+        Object.assign(event.context, envContext);
+      }
+      event.fetch = (req, init) => fetchWithEvent(event, req, init, { fetch: localFetch });
+      event.$fetch = (req, init) => fetchWithEvent(event, req, init, { fetch: $fetch });
+    })
+  );
   for (const h of handlers) {
     let handler = h.lazy ? lazyEventHandler(h.handler) : h.handler;
     if (h.middleware || !h.route) {
@@ -507,14 +540,6 @@ function createNitroApp() {
     }
   }
   h3App.use(config.app.baseURL, router);
-  const localCall = createCall(toNodeListener(h3App));
-  const localFetch = createFetch(localCall, globalThis.fetch);
-  const $fetch = createFetch$1({
-    fetch: localFetch,
-    Headers,
-    defaults: { baseURL: config.app.baseURL }
-  });
-  globalThis.$fetch = $fetch;
   const app = {
     hooks,
     h3App,
@@ -603,9 +628,9 @@ function publicAssetsURL(...path) {
 
 globalThis.__buildAssetsURL = buildAssetsURL;
 globalThis.__publicAssetsURL = publicAssetsURL;
-const getClientManifest = () => import('file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
+const getClientManifest = () => import('/home/rasel/Public/safwat-nuxt-frontend/.nuxt/dist/server/client.manifest.mjs').then((r) => r.default || r).then((r) => typeof r === "function" ? r() : r);
 const getStaticRenderedHead = () => Promise.resolve().then(function () { return _virtual__headStatic$1; }).then((r) => r.default || r);
-const getServerEntry = () => import('file://C:/Users/ronyb/Downloads/-safwat-nuxt-frontend-main-nuxt/safwat-nuxt-frontend/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
+const getServerEntry = () => import('/home/rasel/Public/safwat-nuxt-frontend/.nuxt/dist/server/server.mjs').then((r) => r.default || r);
 const getSSRRenderer = lazyCachedFunction(async () => {
   const manifest = await getClientManifest();
   if (!manifest) {

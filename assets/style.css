@@ -1,14 +1,53 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Ge+Diner&display=swap'); */
 @font-face {
-  font-family: "geDinarOne";
-  src: url("ge dinar one medium.ttf") format("truetype");
+  font-family: "GE Dinar One";
+  src: url('font/ge-light.eot');
+  src: url('font/ge-light.eot') format('embedded-opentype'),
+       url('font/ge-light.woff2') format('woff2'),
+       url('font/ge-light.woff') format('woff'),
+       url('font/ge-light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GE Dinar One";
+  src: url('font/ge-regular.eot');
+  src: url('font/ge-regular.eot') format('embedded-opentype'),
+       url('font/ge-ragular.woff2') format('woff2'),
+       url('font/ge-ragular.woff') format('woff'),
+       url('font/ge-ragular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GE Dinar One";
+  src: url('font/ge-medium.eot');
+  src: url('font/ge-medium.eot') format('embedded-opentype'),
+       url('font/ge-medium.woff2') format('woff2'),
+       url('font/ge-medium.woff') format('woff'),
+       url('font/ge-medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GE Dinar One";
+  src: url('font/ge-bold.eot');
+  src: url('font/ge-bold.eot') format('embedded-opentype'),
+       url('font/ge-bold.woff2') format('woff2'),
+       url('font/ge-bold.woff') format('woff'),
+       url('font/ge-bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
 }
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-body {
-  font-family: "Ge Diner", sans-serif;
+.font-dinar {
+  font-family: "GE Dinar One", sans-serif;
+}
+.font-sens{
+  font-family: sans-serif; 
 }
 
 /* .bg-body{
@@ -323,4 +362,15 @@ svg.svg-inline--fa.fa-circle-check {
 
 .error_border {
   border: 2px solid #f5d260 !important;
+}
+
+.select_arrow{
+   -webkit-appearance: none;
+  -moz-appearance: none;
+  background: transparent;
+  background-image: url("../assets/img/chevron-down.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position-x: 12px;
+  background-position-y: 50%;
 }
